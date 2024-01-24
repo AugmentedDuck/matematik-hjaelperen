@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatTutor</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+  </head>
+
+  <header>
+    <!--TOPPEN AF SIDEN (BØR ALTID VÆRE DEN SAMME)-->
+    <img src="./src/img/matTutor.png" alt="matTutor logo" width="50">
+  </header>
+
+  <body>
+    <h1>Logaritmer</h1>
+    <div class="" id="logarithm1sound">
+        <!--BRØDTEKST AF SIDEN-->
+        <h2>Det kedelige</h2>
+        <p>En logaritme er en matematisk funktion, der fortæller dig, hvor mange gange du skal gange et bestemt tal, med sig selv for at få et andet tal, det første tal kalder vi basen. </p>
+        <p>Nu et kort eksempel: Lad os sige, at du har tallet 8 og basen er 2. Logaritmen, med base 2, af 8 vil blive til 3, fordi \(2^3\) (2 gange 2 gange 2) er lig med 8. Så logaritmer hjælper med at finde ud af, hvilken potens du skal bruge for at få et bestemt tal, altså:</p>
+        <p>$$\log_2(8)=3$$</p>
+        <p>Det smarte er at store skalaer kan laves mindre ved hjælp af logaritmer, fx lyd går fra 0,0000000000001 til 1, og dette kan vi så lave om til en skala bliver en skala fra 0 til 100 når det vises i dB som er nemmere for os at forstå.</p>
+    </div>
+    <div class="hidden" id="logarithm2sound">
+        <!--BRØDTEKST AF SIDEN-->
+        <h2>Og hvad har det med lyd at gøre</h2>
+        <p>Lyd er bølger af energi der rammer øret. Hastigheden af svingningerne kalder vi frekvensen, det vi kender som tonen.</p>
+        <p>Det der er interessant, er lydstyrken, eller amplituden af lyd. Dette måler vi i decibel (dB). Decibel er en logaritmisk skala.</p>
+        <p>Der er to begreber, lydintensitet og lydstyrke. Lydstyrke er dB, mens lydintensiteten er i \(\frac{W}{m^2}\).</p>
+        <p>Sammenhængen mellem lydstyrke og -intensitet er:</p>
+        <p>$$lydstyrke=10\cdot \log_{10}\left(\frac{lydintensitet}{10^{-12}}\right)$$</p>
+        <p>At forholdet er sådan, gør at når vi har en lydstyrke på 100 dB og går intensiteten 10 gange større for vi 110 dB.</p>
+        <p>Eller at en fordobling af intensitet giver en øgning på ca. 3 dB.</p>
+        <table>
+            <tr>
+                <th>Lydniveau</th>
+                <th>dB</th>
+            </tr>
+            <tr>
+                <td>Hørbarhedsgænse</td>
+                <td>0</td> 
+            </tr>
+            <tr>
+                <td>Hvisken</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Tale</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Bytrafik</td>
+                <td>90</td> 
+            </tr>
+            <tr>
+                <td>Rockkoncert (smertegrænse)</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>Jetmotor på 10m afstand</td>
+                <td>150</td>
+            </tr>
+        </table>
+        <p>Dette skema viser hvordan det ikke er lineært, da de fleste ikke ville mene der er lige så langt fra stilhed til tale, som fra tale til rockkoncert.</p>
+    </div>
+  </body>
+
+  <footer>
+    <!--BUNDEN AF SIDEN (BØR ALTID VÆRE DEN SAMME)-->
+    <div class="nav">
+      <button onclick="location.href='./'">[Hjem]</button>
+      <button>[Profil]</button>
+      <button>[Burger menu]</button>
+    </div>
+  </footer>
+</html>
