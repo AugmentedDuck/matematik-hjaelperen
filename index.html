@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatTutor</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
   </head>
 
-  <header>
-    <!--TOPPEN AF SIDEN (BØR ALTID VÆRE DEN SAMME)-->
-    <img src="./src/img/matTutor.png" alt="matTutor logo" width="50">
-  </header>
-
   <body>
-    <!--BRØDTEKST AF SIDEN-->
-    <h1>MatTutoren</h1>
-    <p>Velkommen til MatTutoren, på denne side kan du finde relevante informationer om emner i matematik, som kan være vanskelige.</p>
-    <p>På denne side kan du finde begreber, anvendt matematik, løsningsforslag og problemstillinger du kunne finde i dagligdagen</p>
-    <button onclick="location.href='./subjects.html'">Emner</button>
-  </body>
+    <header>
+      <!--TOPPEN AF SIDEN (BØR ALTID VÆRE DEN SAMME)-->
+      <img src="./src/img/matTutor.png" alt="matTutor logo" width="50">
+    </header>
+    <main>
+      <!--BRØDTEKST AF SIDEN-->
+      <h1>MatTutoren</h1>
+      <p>Velkommen til MatTutoren, på denne side kan du finde relevante informationer om emner i matematik, som kan være vanskelige.</p>
+      <p>På denne side kan du finde begreber, anvendt matematik, løsningsforslag og problemstillinger du kunne finde i dagligdagen</p>
+      <button onclick="location.href='./subjects.html'" class="btn">Emner</button>
+      <div class="push"></div>
+    </main>
+    <footer>
+      <!--BUNDEN AF SIDEN (BØR ALTID VÆRE DEN SAMME)-->
+      <div class="nav">
+        <button onclick="location.href='./'" class="btn"><span class="material-symbols-outlined">home</span></button>
+        <button class="btn"><span class="material-symbols-outlined">open_in_new</span><span class="openNewText">Kom med forbedringer</span></button>
+        <button class="btn"><span class="material-symbols-outlined">menu</span></button>
+      </div>
+    </footer>
 
-  <footer>
-    <!--BUNDEN AF SIDEN (BØR ALTID VÆRE DEN SAMME)-->
-    <div class="nav">
-      <button onclick="location.href='./'">[Hjem]</button>
-      <button>[Profil]</button>
-      <button>[Burger menu]</button>
-    </div>
-  </footer>
+    <script src="./src/script.js"></script>
+  </body>
 </html>
