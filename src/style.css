@@ -1,19 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --text: #050212;
+    --background: #f7f6fe;
+    --primary: #4e26df;
+    --secondary: #d3ed8c;
+    --accent: #65e78c;
+}
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+}
+
+body {
+    background-color: var(--background);
 }
 
 header {
-    background-color: lightblue;
+    background-color: var(--primary);
     padding: 1rem;
     text-align: center;
 }
 
 footer {
-    background-color: lightblue;
+    background-color: var(--primary);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -30,9 +43,23 @@ footer {
 }
 
 .btn {
-    padding: 1rem;
+    padding: 10px;
     border-radius: .5rem;
     margin: 5px;
+    background-color: var(--secondary);
+    transition: 50ms;
+    cursor: pointer;
+}
+
+.btn:hover {
+    padding: 15px;
+    margin: 0px;
+}
+
+.btn:active {
+    background-color: var(--accent);
+    margin: 10px;
+    padding: 5px;
 }
 
 body {
@@ -58,6 +85,18 @@ p, h1, h2 {
     border: .2rem solid black;
     margin: 1rem;
     border-radius: .5rem;
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+
+.subjectBox:hover {
+    border: .2rem solid black;
+    border-radius: 1rem;
+}
+
+.subjectBox:active {
+    border: .2rem solid black;
+    border-radius: 1rem;
 }
 
 .hidden {
