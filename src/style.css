@@ -97,6 +97,7 @@ p, h1, h2 {
 .subjectBox:active {
     border: .2rem solid black;
     border-radius: 1rem;
+    background-color: var(--accent);
 }
 
 .hidden {
